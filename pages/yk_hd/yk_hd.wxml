@@ -1,0 +1,39 @@
+<!--搜索-->
+<view class='shousuo ft30 zhuse' style='position: fixed;'>
+   <image src='../images/fmax.png'></image>
+   <input class='bgf' placeholder='请输入搜索内容' ></input>
+</view>
+<!-- 瀑布流 -->
+<view class='pubuliu'  style='padding-top:156rpx;'>
+  <block wx:for="{{article_lists}}" wx:for-item="item" wx:key="">
+         <navigator url='../hudong_show/hudong_show?id={{item.id}}&uid={{item.uid}}'>
+      <view class='dw_img'> <image src='{{item.img}}' mode='widthFix'></image> </view>
+      <view class='mina ft26 cl3'>{{item.title}}<lable class="minb ft20 cl3">{{item.brief}}</lable></view>
+      <view class='sex_toux'>
+          <view class='sex_a f_left mt8'>
+             <image src='{{item.headimg}}' class='f_left mt4'></image>
+             <view class='f_left'>
+                <view class='cl67 ft20 '>{{item.username}}</view>
+                <view class='cl67 ft14 f_right '>{{item.add_time}}</view>
+             </view>
+          </view>
+          <view class='f_right cl3 ft28 mt16'>♡ {{item.zan}}</view>
+      </view>
+   </navigator>
+  </block>
+    <!-- <navigator url='../hudong_show/hudong_show'>
+    <view class='dw_img'> <image src='../images/bann4.jpg' mode='widthFix'></image><view     class='y_ouji ft26 clf text_center'>游记</view> </view>
+       <view class='mina ft26 cl3'>春熙路<lable class="minb ft20 cl3">综合商业街</lable></view>
+       <view class='sex_toux'>
+          <view class='sex_a f_left mt8'>
+             <image src='' class='f_left mt4'></image>
+             <view class='f_left'>
+                <view class='cl67 ft20 '>旅行者</view>
+                <view class='cl67 ft14 f_right '>2019-06-30</view>
+             </view>
+          </view>
+          <view class='f_right cl3 ft28 mt16'>♡128</view>
+      </view>
+   </navigator>   -->
+   
+</view>

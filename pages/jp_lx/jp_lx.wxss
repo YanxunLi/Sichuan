@@ -1,0 +1,4 @@
+/* pages/jp_lx/jp_lx.wxss */
+.contents{
+  padding-top: 210rpx;
+}

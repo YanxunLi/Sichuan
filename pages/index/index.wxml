@@ -1,0 +1,127 @@
+ <!-- <scroll-view scroll-y="true" style='height:100%' >  -->
+<!-- 引入模板标题模板 -->
+<import src="/utils/title.wxml"/>
+<import src="/utils/alert.wxml"/>
+<!--引入html代码 <include src="header.wxml"/> -->
+<!-- 授权 -->
+<template is="alerts" data="{{name: show}}"></template>
+<!--搜索-->
+<view class='shousuo ft30 zhuse'>
+   <image src='../images/fmax.png'></image>
+   <input class='bgf' placeholder='请输入搜索内容' bindtap='shousuo'></input>
+</view>
+<!-- 轮播图 -->
+ <swiper autoplay="true" circular="true" class="banner" duration="300" indicatorDots="true" interval="5000" indicator-color="#fff" indicator-active-color="#ff4a43" style='height:{{Heights}}'>
+          <block wx:for="{{sliders}}" wx:for-item="item" wx:key=""> 
+            <swiper-item>
+              <navigator url="{{item.url}}">
+                <image class="slide-image" mode="widthFix" src="{{item.img}}" bindload='imgHeights'></image>
+              </navigator>
+            </swiper-item>
+           </block> 
+</swiper>
+<!-- 九宫格 -->
+<view class='jiugongge bgf zidong'>
+    <navigator url="../md_d/md_d">
+        <image class='margin' src='../images/jiu1.png'></image>
+       <view class='ft24 cl3 text_center'>目的地</view>
+    </navigator>
+     <navigator url='../jp_lx/jp_lx'>
+       <image class='margin' src='../images/jiu2.png'></image>
+       <view class='ft24 cl3 text_center'>精品路线</view>
+    </navigator>
+     <navigator url="../ml_xc/ml_xc">
+       <image class='margin' src='../images/jiu3.png'></image>
+       <view class='ft24 cl3 text_center'>美丽乡村</view>
+    </navigator>
+     <navigator url="../ly_gl/ly_gl">
+        <image class='margin' src='../images/jiu4.png'></image>
+       <view class='ft24 cl3 text_center'>游玩攻略</view>
+    </navigator>
+     <navigator url='../jx_yj/jx_yj'>
+        <image class='margin' src='../images/jiu5.png'></image>
+       <view class='ft24 cl3 text_center'>精选游记</view>
+    </navigator>
+     <navigator url='../jieqin/jieqin'>
+       <image class='margin' src='../images/jiu6.png'></image>
+       <view class='ft24 cl3 text_center'>节庆活动</view>
+    </navigator>
+     <navigator url="../yk_hd/yk_hd">
+        <image class='margin' src='../images/jiu7.png'></image>
+       <view class='ft24 cl3 text_center'>游客互动</view>
+    </navigator>
+     <navigator>
+       <image class='margin' src='../images/jiu8.png'></image>
+       <view class='ft24 cl3 text_center'>精彩特惠</view>
+    </navigator>
+</view>
+<!-- 当季热门 -->
+<view class="remen bgf zidong">
+    <!-- 使用模板 -->
+<template is="titles" data="{{name:'当季热门'}}"></template>
+    <!-- 使用模板 -->
+    <swiper bindchange='gai_bian' autoplay="true" circular="true" class="banner biany" duration="300" indicatorDots="true" interval="5000" indicator-color="#fff" indicator-active-color="#ff4a43" style='height:{{Height}}'>
+           <block wx:for="{{dj_reimens}}" wx:for-item="item" wx:key="item.id">
+            <swiper-item>
+              <navigator url="../dangjireimen_show/dangjireimen_show?id={{item.id}}">
+                <image class="slide-image" mode="widthFix" src="{{item.img}}" bindload='imgHeight'></image>
+              </navigator>
+            </swiper-item>  
+            </block>  
+     </swiper>
+       
+    <view class='ft30 cl3 text_center ma_topa'>{{tet[index]}}</view>
+    <view class='ft26 cl6  ma_topb guding'>{{dres[index]}}</view>
+</view>
+<!-- 热门景区 -->
+<view class='remen_jinqu zidong bgf'>
+        <!-- 使用模板 -->
+<template is="titles" data="{{name:'热门景区'}}"></template>
+    <!-- 使用模板 -->
+    <view class='scenicspot margin'>
+    <block wx:for="{{remenjingqus}}" wx:for-item="item" wx:key="item.id">
+       <navigator url="../dangjireimen_show/dangjireimen_show?id={{item.id}}">
+          <image src='{{item.img}}' class='margin' mode="aspectFill"></image>
+          <view class='ft26 clf text_center'>{{item.title}}</view>
+       </navigator>
+    </block>   
+    </view>
+</view>
+<!-- 精选游记 -->
+<view class=' jingxuan zidong bgf'>
+<!-- 使用模板 -->
+<template is="titles" data="{{name:'精选游记'}}"></template>
+    <!-- 使用模板 -->
+     <scroll-view scroll-x="true" style='white-space:nowrap;'>
+     <block wx:for="{{article_lists}}" wx:for-item="item" wx:key="item.id">
+           <navigator url='../youji_show/youji_show?id={{item.id}}'>
+            <view class='tuxin'> <image src="{{item.img}}" mode="widthFix"></image></view>
+            <view class='wenzi'>
+               <image src='{{item.headimg}}' class='f_left'></image>
+               <view class='nvxinze f_left'>
+                  <view class='ft20 cl67'>{{item.username}}</view>
+                  <view class='ft14 cl67'>{{item.add_time}}</view>
+               </view>
+               <view class='titse cl3 ft26 f_left'>{{item.title}}</view>
+            </view>
+         </navigator>
+     </block>
+     </scroll-view>
+</view>
+<!-- 精选路线 -->
+<view class='jx_lx zidong bgf'>
+ <!-- 使用模板 -->
+<template is="titles" data="{{name:'精选路线'}}"></template>
+    <!-- 精选路线 -->
+    <view wx:for="{{line_lists}}" class="item-{{index}}" wx:for-item="item" wx:key="{{item.id}}">
+        <navigator url='../lx_show/lx_show?id={{item.id}}' class='margin ma_bot'>
+            <image src='{{item.show? item.img : loadIcon}}' mode='aspectFill' ></image>
+            <view class='ft26 cl3'>{{item.name}} </view>
+        </navigator>
+    </view>
+</view>
+<image mode='widthFix' class='jzis' style='display:{{contmshu}}' src='../images/loading.gif'></image>
+<view class='jiazaizz text_center ft26 cl9'  style='display:{{ztai}}'>暂无更多了</view> 
+
+<view class="mbs" style="display:{{erztai}}"></view>
+<!-- </scroll-view>  -->

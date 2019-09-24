@@ -1,0 +1,13 @@
+<view class="dizhilist">
+    <view class='misky bgf relative'>
+        <view class='cl34 ft28 relative'> <lable>张三</lable><label class='yger'>152****0659</label>      </view>
+        <view class='ft24 cl6 mt16'><label>四川省   成都市   武侯区</label> </view>
+        <view class='f_right bianji'><image src='../images/bianji.png'></image></view>
+    </view>
+    <view class='misky bgf relative'>
+        <view class='cl34 ft28 relative'> <lable>张三</lable><label class='yger'>152****0659</label>      </view>
+        <view class='ft24 cl6 mt16'><label>四川省   成都市   武侯区</label> </view>
+        <navigator class='f_right bianji'><image src='../images/bianji.png'></image> </navigator>
+    </view>
+</view>
+<navigator url='../add_address/add_address' class='ft32 clf text_center gblse'>新增收货地址</navigator>

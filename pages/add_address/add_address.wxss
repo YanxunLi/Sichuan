@@ -1,0 +1,49 @@
+.biankuang{
+  margin: 20rpx 24rpx 0rpx 24rpx;
+  padding: 20rpx;
+}
+.guihe{
+  width: 100%;
+  height: 93rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.yaojiyui{
+  position: relative;
+  width: 100%;
+  height: 93rpx;
+  line-height: 116rpx;
+  color: #343434;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.yaojiyui>image{
+  width: 26rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+  margin-bottom: 10rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
+.youjt{
+  width: 15rpx;
+  height: 15rpx;
+  position: absolute;
+  bottom: 25rpx;
+  z-index: 3;
+  right: 6rpx;
+  transform: rotate(135deg);
+  border-top: 2rpx solid #999;
+  border-left: 2rpx solid #999;
+}
+.yaojiyui>input{
+  position: absolute;
+  width: 100%;
+  top: 0rpx;
+  left: 0rpx;
+  height: 64rpx;
+  margin-top: 26rpx;
+  padding-left: 114rpx;
+}
+.baocuns{
+  line-height: 80rpx;
+  margin:50rpx  201rpx 0rpx;
+}

@@ -1,0 +1,114 @@
+/* pages/dangjireimen_show/dangjireimen_show.wxss */
+.autose{
+  width: 100%;
+  height: auto;
+  padding: 20rpx 24rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.sibai{
+  width: 420rpx;
+  height: auto;
+}
+.sibai>view{
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+.genduoimg{
+  width: 105rpx;
+  height: auto;
+  overflow: hidden;
+}
+.genduoimg>image{
+  display: block;
+  margin: auto;
+   width: 44rpx;
+   height: 44rpx;
+}
+.genduoimg>view{
+  width: 100%;
+  text-align: center;
+  color: #4fbafe;
+}
+.dibsa{
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-top: -1rpx;
+  border-top: 2rpx solid #f0f0f0;
+  padding: 20rpx 27rpx 24rpx 20rpx;
+}
+.dibsa>image:nth-of-type(1){
+  width: 26rpx;
+  height: 30rpx;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+.dibsa>view{
+  width: 587rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: middle;
+}
+.dibsa>image:nth-of-type(2){
+  width: 14rpx;
+  height: 17rpx;
+  position: absolute;
+  top: 50%;
+  margin-top: -7rpx;
+  right: 27rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
+.luansi{
+  width: 100%;
+  height: auto;
+  padding: 20rpx 24rpx;
+}
+.btnsaxz{
+  width: 120rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  background-image: linear-gradient(0deg, 
+		#ff4a43 0%, 
+		#ff8955 100%), 
+	linear-gradient(
+		#ff4a43, 
+		#ff4a43);
+	background-blend-mode: normal, 
+		normal;
+    border-radius: 25rpx;
+}
+.zidon{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.hlralb{
+  padding: 20rpx 25rpx;
+}
+.shug{
+  width: 4rpx;
+  display: inline-block;
+	height: 30rpx;
+  vertical-align: middle;
+  margin-right: 22rpx;
+	background-color: #ff4a43;
+}
+.bfb{
+  width: 100%;
+  height: auto;
+}
+.youars image{
+  display: block;
+  width: 100% !important;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.gkuan{
+  width: 120rpx;
+}

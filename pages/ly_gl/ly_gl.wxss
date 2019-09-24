@@ -1,0 +1,4 @@
+/* pages/ly_gl/ly_gl.wxss */
+.contents{
+  padding-top: 133rpx;
+}

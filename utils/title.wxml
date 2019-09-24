@@ -1,0 +1,40 @@
+
+<!-- 定义公用标题模板 -->
+<template name="titles">
+     <view class='miaoshu margin cl3 ft32 text_center'>
+        <view></view>
+        <view></view>
+        <view></view>
+        <view></view>
+        <view></view>
+        <view></view>
+        <view></view>
+        <view></view>
+        {{name}}
+     </view>
+</template>
+
+<!-- 住客信息模板 -->
+<template name="userxinxi">
+   <view class='tijiao bgf border10'>
+    <view class='shaqink'>
+      <view class='cl3 ft30'>{{name}}</view>
+      <view class='cl3 ft20'>需填 <lable class="clr ft20"> 2</lable> 位，用于身份验证</view>
+    </view>
+      <view class='xian mt20'></view>
+      <view class='ft28 cl34 mt18'>{{nam1}}</view>
+      <view class='ft28 cl34 mt28'>姓名：<input class='inps' type='text' value=''></input> </view>
+      <view class='xian mt20'></view>
+      <view class='ft28 cl34 mt28'>身份证号码：<input class='inps' type='number' value=''></input> </view>
+      <view class='xian mt20'></view>   
+      <view class='ft28 cl34 mt28'>手机号：<input class='inps' type='text' value=''></input> </view>
+      <view class='xian mt20'></view>
+      <view class='ft28 cl34 mt18'>{{nam2}}</view>
+      <view class='ft28 cl34 mt28'>姓名：<input class='inps' type='text' value=''></input> </view>
+      <view class='xian mt20'></view>
+      <view class='ft28 cl34 mt28'>身份证号码：<input class='inps' type='number' value=''></input> </view>
+      <view class='xian mt20'></view>   
+      <view class='ft28 cl34 mt28'>手机号：<input class='inps' type='text' value=''></input> </view>
+      <view class='xian mt20'></view>   
+    </view>
+</template>

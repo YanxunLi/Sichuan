@@ -1,0 +1,26 @@
+<view class='jipage'>
+<view class="zsygqj border10 bgf">
+    <view  class='cl3 ft30'>泸沽湖4日游</view>
+    <view  class='cl3 ft30'>购买套餐：A有购物，2晚西昌客栈+1晚泸沽湖客栈</view>
+    <!-- 公用阶段 -->
+    <view class='jiajiansq cl3 ft30'>房间数
+      <view class='f_right numstr'>
+            <!-- 主容器 -->  
+            <view class="stepper">  
+                <!-- 减号 -->  
+                <text class="{{minusStatus}}" bindtap="bindMinus">-</text>  
+                <!-- 数值 -->  
+                <input type="number" bindchange="bindManual" value="{{num}}" />  
+                <!-- 加号 -->  
+                <text class="normal act_jis" bindtap="bindPlus">+</text>  
+            </view> 
+      </view>
+     </view>
+    
+</view>
+
+
+
+
+
+</view>

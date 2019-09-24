@@ -1,0 +1,22 @@
+/* pages/mp_dindan/mp_dindan.wxss */
+.yitiao{
+  width: 100%;
+  height: 200rpx;
+  margin-top: 2rpx;
+  box-sizing: border-box;
+  padding: 20rpx 24rpx;
+  position: relative;
+}
+.yiimgs{
+  width: 160rpx;
+  height: 160rpx;
+}
+.shishi{
+  margin: 0rpx 60rpx 0rpx 180rpx;
+  height: auto;
+}
+.zifutai{
+  position: absolute;
+  right: 24rpx;
+  top: 24rpx;
+}

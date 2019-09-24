@@ -1,0 +1,4 @@
+/* pages/xl_yd/xl_yd.wxss */
+.contents{
+  padding-top: 211rpx;
+}

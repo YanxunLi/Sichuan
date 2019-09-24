@@ -1,0 +1,33 @@
+.dizhilist{
+  padding-bottom: 150rpx;
+}
+.relative{
+  position: relative;
+}
+.misky{
+  padding: 24rpx;
+  margin-bottom: 2rpx;
+}
+.yger{
+  position: absolute;
+  left: 88rpx;
+} 
+.bianji{
+  position: absolute;
+  right: 28rpx;
+  top: 42rpx;
+  width: 42rpx;
+  height: 43rpx;
+}
+.gblse{
+  width: 100%;
+  line-height: 80rpx;
+  position: fixed;
+  z-index: 9;
+  background: #4fbafe;
+  bottom: 0rpx;
+}
+.bianji>image{
+  width: 100%;
+  height: 100%;
+}

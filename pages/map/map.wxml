@@ -1,0 +1,8 @@
+
+<map longitude="113.324520" latitude="23.099994"></map>
+
+<calendar weeks-type="cn"
+   days-color="{{dayStyle}}"
+   binddayClick="dayClick" selected="{{selected}}
+/> 
+<calendar bind="userr" pitch_on="circle" calendar-style="calendar" header-style="header" board-style="board" next="{{false}}" prev="{{false}}" show-more-days="{{true}}"  weeks-type="cn"/> 

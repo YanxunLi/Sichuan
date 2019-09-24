@@ -1,0 +1,135 @@
+
+<!-- 引入模板标题模板 -->
+<import src="/utils/alert.wxml"/>
+<!-- 授权 -->
+<template is="alerts" data="{{name: show}}"></template>
+<!--搜索-->
+<view class='shousuo ft30 zhuse' style='position:fixed;'>
+   <image src='../images/fmax.png'></image>
+   <input class='bgf' placeholder='请输入搜索内容' bindtap='shousuo'></input>
+</view>
+<!-- 菜单栏 -->
+<view class='caidan bgf'>
+  <navigator url="../mp_yd/mp_yd" class='f_left'>
+     <image src='../images/mpyd.png' class='clan margin'></image>
+     <view class='ft24 cl3 text_center'>门票预订</view>
+  </navigator>
+ <navigator url='../jd_yd/jd_yd' class='f_left'>
+     <image src='../images/jdyd.png' class='clan margin'></image>
+     <view class='ft24 cl3 text_center'>酒店预订</view>
+  </navigator>
+  <navigator url='../xl_yd/xl_yd' class='f_left'>
+     <image src='../images/lxyd.png' class='clan margin'></image>
+     <view class='ft24 cl3 text_center'>路线预订</view>
+  </navigator>
+  <navigator url="../zc_fw/zc_fw" class='f_left'>
+     <image src='../images/zcyd.png' class='clan margin'></image>
+     <view class='ft24 cl3 text_center'>租车服务</view>
+  </navigator>
+  <navigator url="../tc_gm/tc_gm" class='f_left'>
+     <image src='../images/tcyd.png' class='clan margin'></image>
+     <view class='ft24 cl3 text_center'>特产购买</view>
+  </navigator>
+</view>
+<!--三张图列表容器 -->
+<!-- 门票预订 -->
+<block wx:for="{{yuding}}" wx:for-item="item" wx:key=" ">
+      <navigator url='../dangjireimen_show/dangjireimen_show?id={{item.id}}' class='gulinag bgf margin'>
+    <view class='baoti ft30 cl3'>{{item.title}}</view>
+    <view class='baoti mt21'>
+          <view class='jiage f_left mr21'><block wx:if="{{item.sale=='0'||item.sale=='0.00'}}">门票免费 </block><block wx:else> ¥{{item.sale}}<label>起</label></block></view> 
+          <view class='biaoji f_left mt8'>
+            <block wx:for="{{item.keyword}}" wx:for-item="ios" wx:key="">
+               <view>{{item.keyword[index]}}</view>
+            </block>
+          </view>
+    </view>
+    <view class='webfex mt20'>
+     <block wx:for="{{item.pics}}" wx:for-item="pos" wx:key="">
+     <block wx:if="{{index<3}}">
+          <image mode='aspectFill' src='{{pos.img}}'></image>
+     </block>
+    </block>
+    </view>
+    <view class='din_weizi ft26 cl6 mt25'><image src='../images/dw.png' class='f_left'></image>{{item.address}} </view>
+</navigator>
+</block>
+
+
+
+<!--左右一张图列表容器（1） -->
+<!-- 酒店预订 -->
+<block wx:for="{{jiudian}}" wx:for-item="item" wx:key="{{item.id}}">
+<navigator url='../jiudian_show/jiudian_show?id={{item.id}}' class='gulinag bgf margin'>
+    <view class='hezi_l f_left'>
+        <view class='baoti ft30 cl3'>{{item.name}}</view>
+        <view class='baoti baoti mt4'>
+              <view class='jiage'>¥{{item.sale}}<label>起</label></view> 
+        </view>
+        <view class='baoti mt12'>
+              <view class='biaoji f_left'>
+               <block wx:for="{{item.keyword}}" wx:for-item="ios" wx:key="">
+                   <view>{{item.keyword[index]}}</view>
+               </block>
+              </view>
+        </view>
+         <view class='din_weizi ft26 cl6 mt21'><image src='../images/dw.png' class='f_left'></image>{{item.address}} </view>
+    </view>
+    <image src='{{item.img}}'  class='hezi_r f_right'></image>
+</navigator>
+</block>
+<!-- 路线预订 -->
+<block wx:for="{{luxian_yd}}" wx:for-item="item" wx:key="{{item.id}}">
+<navigator url='../lx_show/lx_show?id={{item.id}}' class='gulinag bgf margin'>
+    <view class='hezi_l f_left'>
+        <view class='lianghang ft30 cl3'>{{item.name}}</view>
+        <view class='baoti baoti mt4'>
+              <view class='jiage'> ¥{{item.shop_price}}<label>起</label></view> 
+        </view>
+        <view class='baoti mt4'>
+              <view class='biaoji f_left'>
+              <block wx:for="{{item.keyword}}" wx:for-item="ios" wx:key="">
+                   <view>{{item.keyword[index]}}</view>
+               </block>
+               </view>
+        </view>
+         <view class='din_weizi ft26 cl6 mt4'>最近团期：07/05(周五) </view>
+    </view>
+    <image mode='aspectFill' src='{{item.img}}'  class='hezi_r f_right'></image>
+</navigator>
+</block>
+<!-- 租车预订 -->
+<block wx:for="{{zuche}}" wx:for-item="item" wx:key="{{item.id}}">
+<navigator url='../zuche_fuwu/zuche_fuwu?id={{item.id}}' class='gulinag bgf margin'>
+    <view class='baoti ft30 cl3'>{{item.name}}</view>
+    <view class='baoti mt21'>
+          <view class='jiage f_left mr21'>¥{{item.price}}<label>起</label></view> 
+    </view>
+    <view class='webfex mt20'>
+     <block wx:for="{{item.pics}}" wx:for-item="pos" wx:key="">
+     <block wx:if="{{index<3}}">
+          <image mode='aspectFill' src='{{pos.img}}'></image>
+     </block>
+    </block>
+    </view>
+    <view class='din_weizi ft26 cl6 mt25'><image src='../images/dw.png' class='f_left'></image>{{item.address}} </view>
+</navigator>
+</block>
+<!-- 四川特产 -->
+<navigator class='gulinag bgf margin mb20'>
+    <view class='baoti ft30 cl3'>四川特产</view>
+    <view class='techan_cj mt20'>
+        <view class='chlind'>
+           <view class='ainiou'><image src='../images/jin1.png'></image><view class='text_center clf ft26'>¥50</view> </view>
+           <view class='ft26 cl3 mt14'>自贡冷吃兔</view>
+        </view>
+        <view class='chlind'>
+           <view class='ainiou'><image src='../images/jin1.png'></image><view class='text_center clf ft26'>¥50</view> </view>
+           <view class='ft26 cl3 mt14'>双流老妈兔头</view>
+        </view>
+        <view class='chlind'>
+           <view class='ainiou'><image src='../images/jin1.png'></image><view class='text_center clf ft26'>¥50</view> </view>
+           <view class='ft26 cl3 mt14'>灯影牛肉</view>
+        </view>
+    </view>
+</navigator>

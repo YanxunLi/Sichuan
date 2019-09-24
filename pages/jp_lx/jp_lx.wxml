@@ -1,0 +1,32 @@
+<!--搜索-->
+<view class='shousuo ft30 zhuse' style='position: fixed;'>
+   <image src='../images/fmax.png'></image>
+   <input class='bgf' placeholder='请输入搜索内容' ></input>
+</view>
+<!-- 切换栏 -->
+<scroll-view scroll-x="true" style='white-space:nowrap;' class='qiehualan bgf' style='margin-top:130rpx'>
+    <view class='tab_qiehuan bgf'  style='width:fit-content'>
+   <block wx:for="{{tab_lan}}" wx:for-item="itemp" wx:key="">
+      <label class='{{yangs[index]}}' data-bao='{{index}}' data-name="{{itemp.cid}}" bindtap='tab_lan'>{{itemp.name}}</label>
+   </block>
+</view>
+</scroll-view>
+<!-- 列表内容 -->
+<view class='contents'>
+<block wx:for="{{line_lists}}" wx:for-item="item" wx:key="">
+    <navigator url='../lx_show/lx_show?id={{item.id}}' class='gulinag bgf margin' >
+    <view class='hezi_l f_left'>
+        <view class='baoti ft30 cl3'>{{item.name}}</view>
+        <view class='baoti ft28 cl6 mt30'>{{item.abstract}}</view>
+        <view class='biaoji f_left mt30'>
+        <block wx:for="{{item.keyword}}" wx:for-item="poy" wx:key="">
+          <view>{{item.keyword[index]}}</view>
+        </block>
+        </view> 
+    </view>
+    <image src='{{item.img}}' mode='aspectFill'  class='hezi_r f_right'></image>
+</navigator>
+</block>
+
+
+</view>

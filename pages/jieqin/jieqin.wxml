@@ -1,0 +1,16 @@
+<!--搜索-->
+<view class='shousuo ft30 zhuse'>
+   <image src='../images/fmax.png'></image>
+   <input class='bgf' placeholder='请输入搜索内容' bindtap='shousuo'></input>
+</view>
+<block wx:for="{{article_lists}}" wx:for-item="item" wx:key="">
+    <navigator url='../youji_show/youji_show?id={{item.id}}' class='gulinag bgf margin'>
+        <view class='hezi_l f_left'>
+            <view class='baoti ft30 cl3'>{{item.title}}</view>
+            <view class='describe ft26 cl6 mt36'>{{item.brief}}</view>
+        </view>
+        <image src='{{item.img}}' mode='aspectFill' class='hezi_r f_right'></image>
+    </navigator>
+</block>
+
+

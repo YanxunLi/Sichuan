@@ -1,0 +1,9 @@
+<image class="banntu" mode="widthFix" src="{{shuju.img}}"></image>
+
+<view class='pad cl3 ft30 bgf'>{{shuju.title}}</view>
+<view class='pad2 bgf'><image class='imgty' src='{{shuju.headimg}}'></image><label class='ft26 cl3'>{{shuju.username}}</label> <label class='ft24 cl3 f_right lhgao'>浏览量 {{shuju.hits}}</label> <label class='ft24 cl3 mlft f_right lhgao'>{{shuju.add_time}}</label> <view class='xian'></view> </view>
+
+<!-- 详情内容 -->
+<view class='bgf pdshow ft26 cl3'>
+  <rich-text nodes="{{xcx_content}}"></rich-text>
+</view>

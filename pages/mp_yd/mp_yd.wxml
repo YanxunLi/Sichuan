@@ -1,0 +1,37 @@
+<!--搜索-->
+<view class='shousuo ft30 zhuse' style='position:fixed;'>
+   <image src='../images/fmax.png'></image>
+   <input class='bgf' placeholder='请输入搜索内容' bindtap='shousuo'></input>
+</view>
+<!-- 切换栏 -->
+<scroll-view scroll-x="true" style='white-space:nowrap;' class='qiehualan bgf' style='margin-top:130rpx'>
+    <view class='tab_qiehuan bgf'  style='width:fit-content'>
+   <block wx:for="{{tab_lan}}" wx:for-item="item" wx:key="">
+      <label class='{{yangs[index]}}' data-bao='{{index}}' bindtap='tab_lan'>{{item.name}}</label>
+   </block>
+</view>
+</scroll-view>
+<view class='contents'>
+<!--三张图列表容器 -->
+<block wx:for="{{yuding}}" wx:for-item="item" wx:key=" ">
+      <navigator url='../dangjireimen_show/dangjireimen_show?id={{item.id}}' class='gulinag bgf margin'>
+    <view class='baoti ft30 cl3'>{{item.title}}</view>
+    <view class='baoti mt21'>
+          <view class='jiage f_left mr21'><block wx:if="{{item.sale=='0'||item.sale=='0.00'}}">门票免费</block><block wx:else> ¥{{item.sale}}<label>起</label></block> </view> 
+          <view class='biaoji f_left mt8'>
+            <block wx:for="{{item.keyword}}" wx:for-item="ios" wx:key="">
+               <view>{{item.keyword[index]}}</view>
+            </block>
+          </view>
+    </view>
+    <view class='webfex mt20'>
+     <block wx:for="{{item.pics}}" wx:for-item="pos" wx:key="">
+     <block wx:if="{{index<3}}">
+          <image mode='aspectFill' src='{{pos.img}}'></image>
+     </block>
+    </block>
+    </view>
+    <view class='din_weizi ft26 cl6 mt25'><image src='../images/dw.png' class='f_left'></image>{{item.address}} </view>
+</navigator>
+</block>
+</view>

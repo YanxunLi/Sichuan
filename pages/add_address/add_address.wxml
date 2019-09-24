@@ -1,0 +1,11 @@
+
+<view class="bgf border10 biankuang" >
+  <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+   <view class='yaojiyui ft24'>收货地址：<image src='../images/dw.png'></image><label class='cl9 ft24'>点击选择</label> <view class='f_right youjt'></view> </view>
+   </picker>
+   <view class='yaojiyui ft24'>详细地址：<input type='text' value=""></input></view>
+   <view class='yaojiyui ft24'>联系人：<input type='text' value=""></input></view>
+   <view class='yaojiyui ft24'>手机号：<input type='number' bindinput='handleInput' value="{{value}}"></input></view>
+   <view class='baocuns ft30 clf zhuse text_center border10'>保存</view>
+</view>
+

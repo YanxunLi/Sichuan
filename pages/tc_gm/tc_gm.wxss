@@ -1,0 +1,9 @@
+/* pages/tc_gm/tc_gm.wxss */
+@import "../jx_yj/jx_yj.wxss";
+.yougao{width: 100%;height: auto;overflow: hidden;}
+/* 加载动画 */
+.jzis{width: 60rpx;margin: auto;display: block;margin-bottom: 20rpx;}
+.jiazaizz{
+  height: 50rpx;
+  line-height: 37rpx;
+}

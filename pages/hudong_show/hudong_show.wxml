@@ -1,0 +1,127 @@
+<!-- 轮播图 -->
+<view class='yyeasc'>
+ <swiper autoplay="true" circular="true" class="banner" duration="300"  interval="5000" indicator-color="#fff" indicator-active-color="#ff4a43" style='height:{{Height}}' bindchange='swiperChange'>
+          <block wx:for="{{article_lists.pics}}" wx:for-item="item" wx:key=""> 
+            <swiper-item>
+                <image class="slide-image" mode="widthFix" src="{{article_lists.pics[index]}}" bindload='imgHeight'></image>
+            </swiper-item>
+           </block> 
+</swiper>
+<view class="imageCount">{{current+1}}/{{article_lists.pics.length}}</view>  
+</view>
+<!-- 标题 -->
+<view class='zuihou bgf'>
+  <view class='ft30 cl3'>{{article_lists.title}}</view>
+  <view class='ft26 cl3 mt32'><rich-text nodes="{{xcx_content}}"></rich-text> </view>
+  <!-- 作者 -->
+  <view class='zuozhe mt41'>
+      <image class='touximg mr10' src='{{article_lists.headimg}}'></image>
+      <view class='fit_zidong '>
+          <view class='ft26 cl3'>{{article_lists.username}}</view>
+          <view class='cl6 ft18'>{{article_lists.add_time}}</view>
+      </view>
+      <view class='aixing f_right'>
+         <image src='../images/aixing1.png' class='mt8'></image>
+         <view class='ft20 cl6 text_center'>{{article_lists.zan}}</view>
+      </view>
+  </view>
+  <view class='xian mt20'></view>
+  <view class='ft22 cl3 mt20'>共{{count}}条评论</view>
+  <view class='mt20'>
+      <view class='inputname'>
+          <image class='touximg' src='{{headimg_tx[0].headimg}}'></image>
+          <input class='box_sing' placeholder='说点什么...' value=''></input>
+          <view class='bubus clf text_center f_right'>发布</view>
+      </view>
+  <block wx:for="{{headimg_tx}}" wx:for-item="item" wx:key="">
+       <view class='heighys'>
+          <image class='mr10 f_left' src='{{item.headimg}}'></image>
+          <view class='fit_zidong '>
+          <view class='ft26 cl6'>{{item.username}}</view>
+          <view class='cl3 ft26 wusijiu'>{{item.content}} <label class='ft20 cl6'>{{item.add_time}}</label>
+          <!-- <view class='ft26 cl3 mt16'><label class='cll'></label>  回复<label class='cll'>浅层</label> ：我是发布者</view> -->
+          <!-- <block wx:if="{{item.reply_list}}"> -->
+          <block wx:for="{{item.reply_list}}" wx:for-item="iys" wx:key="">
+                    <view class='ft26 cl3 mt16'><label class='cll'>{{iys.username}}</label> ：{{item.content}}</view>
+          </block>     
+          <!-- </block>        -->
+          </view>
+      </view>
+      <view class='aixing f_right'>
+         <image src='../images/aixing1.png' class='mt8'></image>
+         <view class='ft20 cl6 text_center'>{{item.zan}}</view>
+      </view>
+      <view class='xian'></view>
+      </view>
+   </block>
+         <!-- <view class='heighys'>
+          <image class='mr10 f_left' src='https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1563763841&di=5dd1ae1601721c21081f3fbfc88a11fa&src=http://b-ssl.duitang.com/uploads/item/201708/24/20170824151910_XFrY8.jpeg'></image>
+          <view class='fit_zidong '>
+          <view class='ft26 cl6'>浅层</view>
+          <view class='cl3 ft26 wusijiu'>成都海昌极成都海昌极地海洋公园是位于成都市天府新区华阳街道天府大道南段的一个5A级景区地海洋公园是位于成都市天府新区华阳街道天府大道南段的一个5A级景区 <label class='ft20 cl6'>06-17</label>
+          <view class='ft26 cl3 mt16'><label class='cll'>我是发布者</label>  回复<label class='cll'>浅层</label> ：谢谢啦！</view>
+          </view>
+      </view>
+      <view class='aixing f_right'>
+         <image src='../images/aixing1.png' class='mt8'></image>
+         <view class='ft20 cl6'>188</view>
+      </view>
+      <view class='xian'></view>
+      </view> -->
+
+        <!-- <view class='heighys'>
+          <image class='mr10 f_left' src='https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1563763841&di=5dd1ae1601721c21081f3fbfc88a11fa&src=http://b-ssl.duitang.com/uploads/item/201708/24/20170824151910_XFrY8.jpeg'></image>
+          <view class='fit_zidong '>
+          <view class='ft26 cl6'>浅层</view>
+          <view class='cl3 ft26 wusijiu'>好漂亮 <label class='ft20 cl6'>06-17</label>
+
+          </view>
+      </view>
+      <view class='aixing f_right'>
+         <image src='../images/aixing1.png' class='mt8'></image>
+         <view class='ft20 cl6'>188</view>
+      </view>
+      <view class='xian'></view>
+      </view>
+        <view class='heighys'>
+          <image class='mr10 f_left' src='https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1563763841&di=5dd1ae1601721c21081f3fbfc88a11fa&src=http://b-ssl.duitang.com/uploads/item/201708/24/20170824151910_XFrY8.jpeg'></image>
+          <view class='fit_zidong '>
+          <view class='ft26 cl6'>浅层</view>
+          <view class='cl3 ft26 wusijiu'>好漂亮 <label class='ft20 cl6'>06-17</label>
+          </view> -->
+      <!-- </view>
+      <view class='aixing f_right'>
+         <image src='../images/aixing1.png' class='mt8'></image>
+         <view class='ft20 cl6'>188</view>
+      </view>
+      <view class='xian'></view>
+      </view> -->
+  </view>
+  <!-- 展开更多评论 -->
+  <view class='zkgengduo bgf text_center cll ft30' style='display:{{strat}}' bindtap='genduo_pl'>展开更多评论</view>
+</view>
+<!-- 相关推荐 -->
+<view class='xiangguan ft26 cl3'>相关推荐</view>
+
+<!-- 瀑布流 -->
+<view class='pubuliu' >
+ <block wx:for="{{xiangtui}}" wx:for-item="item" wx:key="">
+   <navigator url='../hudong_show/hudong_show?id={{item.id}}&uid={{item.uid}}'>
+      <view class='dw_img'> <image src='{{item.img}}' mode='widthFix'></image> </view>
+      <view class='mina ft26 cl3'>{{item.title}}<lable class="minb ft20 cl3">{{item.brief}}</lable></view>
+      <view class='sex_toux'>
+          <view class='sex_a f_left mt8'>
+             <image src='' class='f_left mt4'></image>
+             <view class='f_left'>
+                <view class='cl67 ft20 '>{{item.username}}</view>
+                <view class='cl67 ft14 f_right '>{{item.add_time}}</view>
+             </view>
+          </view>
+          <view class='f_right cl3 ft28 mt16'>♡{{item.zan}}</view>
+      </view>
+   </navigator>
+   </block>
+   
+
+   
+</view>

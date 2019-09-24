@@ -1,0 +1,33 @@
+/* pages/xt_xiaoxi_show/xt_xiaoxi_show.wxss */
+page{
+  background: #fff;
+}
+.yiglie{
+  margin: 30rpx 20rpx 10rpx;
+  height: auto;
+}
+.yiglie>image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background: salmon;
+}
+.xiaoxi{
+  margin-left: 100rpx;
+  height: auto;
+  position: relative;
+  padding: 20rpx 23rpx;
+  box-sizing: border-box;
+  background: #efefef;
+}
+.shejian{
+  width: 0rpx;
+  height: 0rpx;
+  position: absolute;
+  top: -22rpx;
+  left: 0rpx;
+  transform: rotate(-150deg);
+  border-left: 50rpx solid transparent;
+  border-right: 50rpx solid transparent;
+  border-bottom: 25rpx solid #efefef;
+}

@@ -1,0 +1,30 @@
+<!-- 轮播图 -->
+<view class='yyeasc'>
+ <swiper bindchange="swiperChange"   autoplay="true" circular="true" class="banner" duration="300"  interval="5000" indicator-color="#fff" indicator-active-color="red" style='height:{{Height}}'>
+          <block wx:for="{{spshow.pics}}" wx:for-item="item" wx:key="">
+            <swiper-item>
+                <image class="slide-image" mode="widthFix" src="{{item.img}}" bindload='imgHeight'></image>
+            </swiper-item>
+           </block> 
+</swiper>
+<view class="imageCount">{{current+1}}/{{spshow.pics.length}}</view>  
+</view>
+<!-- 特产价格 -->
+<view class='tcjiage bgf box_sing'>
+    <view class='clr ft30'>¥{{spshow.price}}</view>
+    <view class='yitiao mt20'>
+       <view class='f_left ft26 cl3'>{{spshow.title}}</view>
+      <view class='ft20 cl9 fenxiang'><image class='imgsadw' src='../images/fx.png'></image> 分享       <button  open-type="share" hover-class='none'></button></view>
+    </view>
+</view>
+<!-- 发货 规格 -->
+<view class='zidon naozi box_sing bgf mt20'>
+  <view class='ft26 cl3'><label class='mr28 cl9 ft26'>发货</label> <image class='des' src='../images/dw.png'></image> {{spshow.areaname}} <view class='shu'></view> 快递：免运费 <label class='cl9 ft26 f_right'>月销：{{spshow.number}}</label> </view>
+  <view class='ft26 cl3 mt39'><label class='mr28 cl9 ft26'>选择</label>已选：“五香”<view class='youjit f_right mt10'></view>  </view>
+   <view class='ft26 cl3 mt39'><label class='mr28 cl9 ft26 f_left'>参数</label><view class='scrqi'>生产日期  生产许可证编号... </view><view class='youjit f_right mb10'></view> </view>
+</view>
+<!-- 详情描述 -->
+<view class='zidon bgf mt20 pgdsin ft26 cl3'>
+   <rich-text nodes="{{xcx_content}}"></rich-text>
+</view>
+<navigator class='ft32 clf text_center btnliji'>立即购买</navigator>

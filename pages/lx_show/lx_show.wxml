@@ -1,0 +1,182 @@
+<image src="http://lyxcx.zwon.net/upload/ticket/1564035995.png" mode="widthFix"  class="banntu"></image>
+<view class='autose bgf'>
+    <view class='sibai f_left'>
+       <view class='ft30 cl3'>泸沽湖4日游，可12人小团，0自费0购物
+火盆烧烤，宿景区，环湖，深度游船，篝
+火晚会。</view>
+    </view>
+
+      <view  class='f_right genduoimg' bindtap='noimg'> <image src='../images/img.jpg'></image><view class='ft22'>更多图片</view> </view>
+
+</view>
+<view class='dibsa bgf box_sing'>
+    <image src='../images/dw.png'></image>
+    <!-- 注意此处限制文字长度 -->
+    <view class='cl6 ft26 ' bindtap='dizhinav'>成都中国旅行社有限公司田仁路分社</view> 
+    <image src='../images/xinagyou.png'></image>
+</view>
+
+<!-- 套餐规格选择 -->
+<view class='tcguige mt20 bgf'>
+     <view class='cl34 ft30 pl24'>套餐/出发日期选择</view>
+     <scroll-view class='huayahua mt20' scroll-x> 
+        <view class='taocns ml24 zhuse' bindtap='taocans' data-index="1">
+            <view class='text_center clf ft24'>A套餐 <lable class="ft17">¥298起</lable> </view>
+            <view class='erhs text_center ft16 clf'>2晚西昌客栈+1晚泸沽...</view>
+        </view>
+        <view class='taocns ml24' bindtap='taocans' data-index="2">
+            <view class='text_center clf ft24'>A套餐 <lable class="ft17">¥298起</lable> </view>
+            <view class='erhs text_center ft16 clf'>2晚西昌客栈+1晚泸沽...</view>
+        </view>
+        <view class='taocns ml24' bindtap='taocans' data-index="3">
+            <view class='text_center clf ft24'>A套餐 <lable class="ft17">¥298起</lable> </view>
+            <view class='erhs text_center ft16 clf'>2晚西昌客栈+1晚泸沽...</view>
+        </view>
+        <view class='taocns ml24' bindtap='taocans' data-index="4">
+            <view class='text_center clf ft24'>A套餐 <lable class="ft17">¥298起</lable> </view>
+            <view class='erhs text_center ft16 clf'>2晚西昌客栈+1晚泸沽...</view>
+        </view>
+        <view class='taocns ml24' bindtap='taocans' data-index="5">
+            <view class='text_center clf ft24'>A套餐 <lable class="ft17">¥298起</lable> </view>
+            <view class='erhs text_center ft16 clf'>2晚西昌客栈+1晚泸沽...</view>
+        </view>
+     </scroll-view>
+
+<!-- 日期 -->
+    <view class='liuerwu bgf mt25'>
+        <scroll-view  class='huayahua' scroll-x>
+           <view class='yibers act_lan'>
+               <view class='cl3 ft20 text_center mt10'>07-27明天</view>
+               <view class='clr ft24 text_center'>¥588</view>
+               <view class='daosanj'><view class='gougou'></view> </view>
+           </view>
+            <view class='yibers act_lan'>
+               <view class='cl3 ft20 text_center mt10'>07-27明天</view>
+               <view class='clr ft24 text_center'>¥588</view>
+               <view class='daosanj'><view class='gougou'></view> </view>
+           </view>
+           <view class='yibers '>
+               <view class='cl3 ft20 text_center mt10'>07-27明天</view>
+               <view class='clr ft24 text_center'>¥588</view>
+           </view>
+           <view class='yibers '>
+               <view class='cl3 ft20 text_center mt10'>07-27明天</view>
+               <view class='clr ft24 text_center'>¥588</view>
+           </view>
+           <view class='yibers '>
+               <view class='cl3 ft20 text_center mt10'>07-27明天</view>
+               <view class='clr ft24 text_center'>¥588</view>
+           </view>
+           <view class='yibers '>
+               <view class='cl3 ft20 text_center mt10'>07-27明天</view>
+               <view class='clr ft24 text_center'>¥588</view>
+           </view>
+        </scroll-view>
+        <view class='gendos'>
+           <view class='duoriqi ft20 cl3'>更多日期</view><image src='../images/xinagyou.png'></image>
+        </view>
+    </view>
+    <view class='mt50 pl24'>
+       <view class='ft28 cl3'>商家说亮点</view>
+       <view class='cl3 ft24 mt16'>1、可安排12人小团，0自费0购物，4种套餐任意选择。</view>
+       <view class='cl3 ft24 mt16'>2、可入住2晚泸沽湖，让您在泸沽湖景区呆的时间更长。</view>
+       <view class='cl3 ft24 mt16'>3、划船+网红烧烤+风味餐+亲爱的客栈+篝火晚会   亮点超多</view>
+       <view class='cl3 ft24 mt16'>4、环湖：360度全方位游览泸沽湖。</view>
+    </view>
+     <view class='mt50 pl24'>
+       <view class='ft28 cl3'>行程概览</view>
+       <view class='cl3 ft24 mt16'>1、3个景点</view>
+       <view class='cl3 ft24 mt16'>2、共12次用餐（含3早5正；4次餐自理）</view>
+       <view class='cl3 ft24 mt16'>3、3晚舒适酒店</view>
+    </view>
+</view>
+<!-- 第一天 -->
+<view class='mt20 bgf diyiti'>
+     <view class='text_center ft28 cll'>第一天</view>
+     <view class='ft24 cl34 text_center mt16'>成都 | 邛海国家湿地公园</view>
+     <view class='ft24 cl34 mt44'>
+     1、早上6:30在创业路诺亚方舟酒店门口集合（具体时间及地点由导游提前通知，请保持手机畅通）。
+     </view>
+     <view class='ft24 cl34 mt16'>2、人员到达后，同一乘坐空调旅游车经全程高速前往凉山州州府-西昌（约8小时到达），迎接期待中的女儿国。</view>
+     <view class='ft24 cl34 mt16'>3、中午(11:30)前往指定餐厅享用中餐，下午乘车继续前往西昌。</view>
+      <view class='ft24 cl34 mt16'>4、到达西昌市区，游览“攀西明珠”【邛海】，只有在海边活动2-3小时，按集合时间到指定地点乘车回酒店入住，后自由活动至次日出发。</view>
+     <view class='ft24 cl34 mt44'>*参考酒店：佳秀酒店或同级</view> 
+     <view class='tuimys mt10'>
+        <image mode='aspectFill' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565174125203&di=15970ed0c99ddd2b000c493532dc0064&imgtype=0&src=http%3A%2F%2Fimage.qmango.com%2Fhotelimg%2Fc2%2F276935%2F6O0A3560.jpg' class='f_left'></image>
+        <image mode='aspectFill' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565174148961&di=a652509a899d58c864664516b1fabbc5&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F11%2F76%2F78%2F26R58PIC68j.jpg' class='f_right'></image>
+     </view>
+</view>
+
+<!-- 第一天 -->
+<view class='mt20 bgf diyiti'>
+     <view class='text_center ft28 cll'>第二天</view>
+     <view class='ft24 cl34 text_center mt16'>成都 | 丽江泸沽湖</view>
+     <view class='ft24 cl34 mt44'>
+     1、早上6:30在创业路诺亚方舟酒店门口集合（具体时间及地点由导游提前通知，请保持手机畅通）。
+     </view>
+     <view class='ft24 cl34 mt16'>2、人员到达后，同一乘坐空调旅游车经全程高速前往凉山州州府-西昌（约8小时到达），迎接期待中的女儿国。</view>
+     <view class='ft24 cl34 mt16'>3、中午(11:30)前往指定餐厅享用中餐，下午乘车继续前往西昌。</view>
+      <view class='ft24 cl34 mt16'>4、到达西昌市区，游览“攀西明珠”【邛海】，只有在海边活动2-3小时，按集合时间到指定地点乘车回酒店入住，后自由活动至次日出发。</view>
+     <view class='ft24 cl34 mt44'>*参考酒店：佳秀酒店或同级</view> 
+     <view class='tuimys mt10'>
+        <image mode='aspectFill' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565174441035&di=d69f6e6f9efbf6e672786e908483e4b5&imgtype=0&src=http%3A%2F%2Fs6.sinaimg.cn%2Fmw690%2F003CxTovgy6KItlhnedf5%26690' class='f_left'></image>
+        <image mode='aspectFill' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565174463554&di=22ca27bc6424d7ef16b95c16f4f4de23&imgtype=0&src=http%3A%2F%2Fimg.ivsky.com%2Fimg%2Ftupian%2Fpre%2F201106%2F09%2Fjiudian_qiantaijiedai.jpg' class='f_right'></image>
+     </view>
+</view>
+<!-- 编辑器纯图片 -->
+<view class='binjicun bgf mt20'>
+     <image src='https://img30.360buyimg.com/popWaterMark/jfs/t1/54108/38/5298/51613/5d2e878dE51d343bc/e879b0becd142574.jpg!q70.dpg.webp' mode='widthFix'></image>
+              <image src='https://img30.360buyimg.com/popWaterMark/jfs/t1/53944/23/5232/82693/5d2e878aEaea0cf30/ba745003c84710c1.jpg!q70.dpg.webp' mode='widthFix'></image>
+       <image src='https://img30.360buyimg.com/popWaterMark/jfs/t1/68854/30/4642/102170/5d2e878aE235d3cc8/b972fa9adcf04a6a.jpg!q70.dpg.webp' mode='widthFix'></image>
+</view>
+<view class='mt20 bgf pdesew'>
+     <view class='ft28 cl3'>费用包含</view>
+    <view class="table mt20">
+            <view class="tr" >
+              <view class="td">交通</view>
+              <view class="td">巴士4次</view>
+            </view>
+            <view class="tr">
+              <view class="td">交通</view>
+              <view class="td">巴士4次</view>
+            </view>
+             <view class="tr">
+              <view class="td">用餐</view>
+              <view class="td">共12次用餐（含8次用餐；4次自理）</view>
+            </view>
+    </view>
+
+     <view class='ft28 cl3'>费用不包含</view>
+    <view class="table mt20">
+            <view class="tr" >
+              <view class="td">交通</view>
+              <view class="td">巴士4次</view>
+            </view>
+            <view class="tr">
+              <view class="td">交通</view>
+              <view class="td">巴士4次</view>
+            </view>
+             <view class="tr">
+              <view class="td">用餐</view>
+              <view class="td">共12次用餐（含8次用餐；4次自理）</view>
+            </view>
+    </view>
+
+     <view class='ft28 cl3'>其它</view>
+    <view class="table mt20">
+            <view class="tr" >
+              <view class="td">交通</view>
+              <view class="td">巴士4次</view>
+            </view>
+            <view class="tr">
+              <view class="td">交通</view>
+              <view class="td">巴士4次</view>
+            </view>
+             <view class="tr">
+              <view class="td">用餐</view>
+              <view class="td">共12次用餐（含8次用餐；4次自理）</view>
+            </view>
+    </view>
+</view>
+
+<view class='tihiaio bgf'><label class='ft28 cl34'>总价：</label><label class='clr ft32'>¥168</label> <view class='tijis text_center f_right clf ft24'>立即预订</view> </view>

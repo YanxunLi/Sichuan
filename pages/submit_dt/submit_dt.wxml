@@ -1,0 +1,26 @@
+<!-- <view class="pousa"><image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1563797208011&di=00337634164356983c6738315528ec69&imgtype=0&src=http%3A%2F%2Fpic41.nipic.com%2F20140508%2F18609517_112216473140_2.jpg' mode='aspectFill'></image></view> -->
+<import src="/utils/title.wxml"/>
+<view class='juqi'>
+<view class='tijiao bgf border10'>
+   <view class='ft30 cl3'>【成人票】海洋公园票</view>
+   <view class='xian mt20'></view>
+   <view class='cl3 ft30 mt20'>使用日期</view>
+   <calendar weeks-type="cn" prev="{{false}}" next="{{false}}"days-color="{{dayStyle}}" binddayClick="dayClick" selected="{{selected}} "/>
+<view class='xian '></view>
+   <view class='shul cl3 ft30 mt20'>购买数量
+        <!-- 主容器 -->  
+        <view class="stepper f_right">  
+            <!-- 减号 -->  
+            <text class="{{minusStatus}}" bindtap="bindMinus">-</text>  
+            <!-- 数值 -->  
+            <input type="number" bindchange="bindManual" value="{{num}}" />  
+            <!-- 加号 -->  
+            <text class="normal" bindtap="bindPlus">+</text>  
+        </view>  
+   </view> 
+   <view class='udak ft20 cl9 text_center mt20'>同一身份证当天限购一张</view>
+</view>
+<template is="userxinxi" data="{{name:'游客信息',nam1:'游客1',nam2:'游客'}}"></template>
+</view>
+
+<view class='tihiaio bgf'><label class='ft28 cl34'>总价：</label><label class='clr ft32'>¥168</label> <view class='tijis text_center f_right clf ft24'>提交</view> </view>

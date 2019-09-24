@@ -1,0 +1,27 @@
+<!--搜索-->
+<view class='shousuo ft30 zhuse' style='position:fixed;'>
+   <image src='../images/fmax.png'></image>
+   <input class='bgf' placeholder='请输入搜索内容' bindtap='shousuo'></input>
+</view>
+<!--三张图列表容器 -->
+<view class='contents'>
+<!-- 租车预订 -->
+<block wx:for="{{zuche}}" wx:for-item="item" wx:key="{{item.id}}">
+<navigator url='../zuche_fuwu/zuche_fuwu?id={{item.id}}' class='gulinag bgf margin'>
+    <view class='baoti ft30 cl3'>{{item.name}}</view>
+    <view class='baoti mt21'>
+          <view class='jiage f_left mr21'>¥{{item.price}}<label>起</label></view> 
+    </view>
+    <view class='webfex mt20'>
+     <block wx:for="{{item.pics}}" wx:for-item="pos" wx:key="">
+     <block wx:if="{{index<3}}">
+          <image mode='aspectFill' src='{{pos.img}}'></image>
+     </block>
+    </block>
+    </view>
+    <view class='din_weizi ft26 cl6 mt25'><image src='../images/dw.png' class='f_left'></image>{{item.address}} </view>
+</navigator>
+</block>
+
+
+</view>

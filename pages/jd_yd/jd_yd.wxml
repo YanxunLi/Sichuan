@@ -1,0 +1,38 @@
+<!--搜索-->
+<view class='shousuo ft30 zhuse' style='position: fixed;'>
+   <image src='../images/fmax.png'></image>
+   <input class='bgf' placeholder='请输入搜索内容' ></input>
+</view>
+<!-- 内容 -->
+<view class='contents'>
+<!-- 查询 -->
+<view class='arrly bgf'>
+   <view></view>
+   <view></view>
+   <view><button class='mt30 text_center ft32'>查询</button></view>
+</view>
+<block wx:for="{{jiudian}}" wx:for-item="item" wx:key="{{item.id}}">
+<navigator url='../jiudian_show/jiudian_show?id={{item.id}}' class='gulinag bgf margin'>
+    <view class='hezi_l f_left'>
+        <view class='baoti ft30 cl3'>{{item.name}}</view>
+        <view class='baoti baoti mt4'>
+        <block wx:if="{{item.sale=='0'||item.sale=='0.00'}}">
+           <view class='jiage'>价格免费</view> 
+        </block>
+        <block wx:else>
+            <view class='jiage'>¥{{item.sale}}<label>起</label></view> 
+         </block>
+        </view>
+        <view class='baoti mt12'>
+              <view class='biaoji f_left'>
+               <block wx:for="{{item.keyword}}" wx:for-item="ios" wx:key="">
+                   <view>{{item.keyword[index]}}</view>
+               </block>
+              </view>
+        </view>
+         <view class='din_weizi ft26 cl6 mt21'><image src='../images/dw.png' class='f_left'></image>{{item.address}} </view>
+    </view>
+    <image src='{{item.img}}'  class='hezi_r f_right'></image>
+</navigator>
+</block>
+</view>

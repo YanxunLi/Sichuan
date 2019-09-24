@@ -1,0 +1,23 @@
+/* pages/jx_yj/jx_yj.wxss */
+/* 自定义瀑布流 */
+.liul{
+  width: 47%;
+  padding-top: 150rpx;
+  padding-bottom: 10rpx;
+  height: auto;
+}
+.lyousa{  margin: 0rpx 1% 0rpx 2%;}
+.lyousb{  margin: 0rpx 2% 0rpx 1%;}
+.liul navigator{
+  width: 100%;
+  background: #fff;
+  margin-bottom: 15rpx;
+  height: auto;
+  border-radius:  10rpx;
+  overflow: hidden;
+  padding-bottom: 15rpx;
+} 
+.liul>navigator>image{
+  display: block;
+  width: 100%;
+}

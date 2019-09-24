@@ -1,0 +1,44 @@
+<!-- 引入模板标题模板 -->
+<import src="/utils/alert.wxml"/>
+<!-- 授权 -->
+<template is="alerts" data="{{name: show}}"></template>
+<!-- 头像 -->
+<view class="toux">
+   <image class='margin' src="{{userinfo.avatarUrl}}"></image>
+   <view class='ft26 clf text_center'>{{userinfo.nickName}}</view>
+</view>
+<!-- 列表 -->
+<navigator url='../mp_dindan/mp_dindan' class='list_biao'>
+   <image src='../images/tu1.png ' class='xiaimg f_left'></image>
+   <view class='ft30 cl3 f_left'>门票订单<image class='youj f_right' src='../images/xinagyou.png'></image> </view>
+</navigator>
+<navigator url='../submit_dt/submit_dt' class='list_biao'>
+   <image src='../images/tu2.png ' class='xiaimg f_left'></image>
+   <view class='ft30 cl3 f_left'>酒店订单<image src='../images/xinagyou.png' class='youj f_right'></image> </view>
+</navigator>
+<navigator url='../fabu_dt/fabu_dt' class='list_biao'>
+   <image src='../images/tu3.png ' class='xiaimg f_left'></image>
+   <view class='ft30 cl3 f_left'>线路订单<image src='../images/xinagyou.png' class='youj f_right'></image> </view>
+</navigator>
+<navigator url='../fabu_dt/fabu_dt' class='list_biao'>
+   <image src='../images/tu4.png ' class='xiaimg f_left'></image>
+   <view class='ft30 cl3 f_left'>租车订单<image src='../images/xinagyou.png' class='youj f_right'></image> </view>
+</navigator>
+<navigator class='list_biao mbos20'>
+   <image src='../images/tu5.png ' class='xiaimg f_left'></image>
+   <view class='ft30 cl3 f_left'>商品订单<image src='../images/xinagyou.png' class='youj f_right'></image> </view>
+</navigator>
+
+<navigator url='../address_list/address_list' class='list_biao'>
+   <image src='../images/tu8.png ' class='xiaimg f_left'></image>
+   <view class='ft30 cl3 f_left'>地址管理<image src='../images/xinagyou.png' class='youj f_right'></image> </view>
+</navigator>
+<navigator url='../xt_xiaoxi/xt_xiaoxi' class='list_biao'>
+   <image src='../images/tu6.png ' class='xiaimg f_left'></image>
+   <view class='ft30 cl3 f_left'>系统短信<image src='../images/xinagyou.png' class='youj f_right'></image> </view>
+</navigator>
+<navigator url='../zhanghuminxi/zhanghuminxi' class='list_biao'>
+   <image src='../images/tu9.png ' class='xiaimg f_left'></image>
+   <view class='ft30 cl3 f_left'>账户明细<image src='../images/xinagyou.png' class='youj f_right'></image> </view>
+</navigator>
+

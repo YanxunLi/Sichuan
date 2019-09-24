@@ -1,0 +1,8 @@
+<scroll-view scroll-y="true" bindscrolltolower="aita" style='height:100%; white-space:nowrap;'> 
+<!-- 数据源 -->
+ <view class='item-{{index}}' wx:for="{{lazyData}}" wx:key="*this.src">
+  <image src='{{item.show? item.src : loadIcon}}' class='{{item.show? "active" : ""}}'></image>
+  <view>a-{{index}}</view>
+</view> 
+<view class='jiazaizz'>加载中...</view>
+</scroll-view>

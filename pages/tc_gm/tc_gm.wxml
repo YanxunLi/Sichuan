@@ -1,0 +1,32 @@
+<!--搜索-->
+<view class='shousuo ft30 zhuse' style='position: fixed;'>
+   <image src='../images/fmax.png'></image>
+   <input class='bgf' placeholder='请输入搜索内容' ></input>
+</view>
+   <!-- 自定义瀑布流 -->
+<view class='yougao'>   
+   <view class="liul lyousa f_left">
+   <block wx:for="{{shuzuyi}}" wx:for-item="item" wx:key="{{item.id}}">
+     <navigator class="border10 bgf" class="item-{{index}}" url='../tc_show/tc_show?id={{item.id}}'>
+       <image mode="widthFix" src="{{item.show? item.img : loadIcon}}"></image>
+       <view class='mina ft26 cl3'>{{item.title}}</view>
+      <view class='zuoyouli mt20'><view class='zview f_left text_center'>包邮</view><label class='ft22 cl6 f_right'>{{item.areaname}}</label> </view>
+      <view class='zuoyouli mt8'><label class='ft28 clr mr10'>¥{{item.price}}</label><label class='ft16 cl6 '>{{item.number}}人付款</label><image src='../images/gouwuce.png' class='gwc f_right mt21 '></image>  </view>
+     </navigator>
+     </block>
+   </view>  
+   <view class="liul lyousb f_right">
+     <block wx:for="{{shuzuer}}" wx:for-item="item" wx:key="{{item.id}}">
+      <navigator class="border10 bgf" class="item-{{index}}" url='../tc_show/tc_show?id={{item.id}}'>
+       <image mode="widthFix" src="{{item.show? item.img : loadIcon}}"></image>
+       <view class='mina ft26 cl3'>{{item.title}}</view>
+      <view class='zuoyouli mt20'><view class='zview f_left text_center'>包邮</view><label class='ft22 cl6 f_right'>{{item.areaname}}</label> </view>
+      <view class='zuoyouli mt8'><label class='ft28 clr mr10'>¥{{item.price}}</label><label class='ft16 cl6 '>{{item.number}}人付款</label><image src='../images/gouwuce.png' class='gwc f_right mt21 '></image>  </view>
+     </navigator>
+     </block>
+   </view>
+</view>
+   <image mode='widthFix' class='jzis' style='display:{{contmshu}}' src='../images/loading.gif'></image>
+   <view class='jiazaizz text_center ft26 cl9'  style='display:{{ztai}}'>暂无更多了</view> 
+
+   <view class="mbs" style="display:{{erztai}}"></view>

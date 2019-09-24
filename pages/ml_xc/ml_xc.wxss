@@ -1,0 +1,4 @@
+/* pages/ml_xc/ml_xc.wxss */
+.contents{
+  padding-top: 133rpx;
+}

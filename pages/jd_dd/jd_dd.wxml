@@ -1,0 +1,37 @@
+<import src="/utils/title.wxml"/>
+<view class='jipage'>
+<view class="zsygqj border10 bgf">
+    <view  class='cl3 ft30'>温馨大床房</view>
+    <!-- 公用阶段 -->
+    <view class='jiajiansq cl3 ft30'>房间数
+      <view class='f_right numstr'>
+            <!-- 主容器 -->  
+            <view class="stepper">  
+                <!-- 减号 -->  
+                <text class="{{minusStatus}}" bindtap="bindMinus">-</text>  
+                <!-- 数值 -->  
+                <input type="number" bindchange="bindManual" value="{{num}}" />  
+                <!-- 加号 -->  
+                <text class="normal act_jis" bindtap="bindPlus">+</text>  
+            </view> 
+      </view>
+     </view>
+     <!-- 规格 -->
+     <view class="guigeus">
+          <view>面积   42㎡ <label class=' ml99'>早餐 每日双早</label> </view>
+          <view>楼层   23层 <label class=' ml99'>窗户 有窗</label>  </view>
+          <view>可住   2人  <label class=' ml99'>宽带 无线wifi和有限宽带</label> </view>
+          <view>卫浴   独立卫浴  <label class=' ml99'>空调 有</label></view>
+          <view>床型   大床1.8米 x 2.0米1张</view>
+          <view>浴室配套   拖鞋、电吹风、24小时热水、洗漱用品</view>
+          <view>生活电器   电水壶、洗衣机、微波炉</view>
+          <view>媒体设备   有线电视</view>
+          <view>休闲娱乐   茶艺工具</view>
+          <view>其他设施   写字台、沙发、阳台</view>
+      </view>
+</view>
+
+<template is="userxinxi" data="{{name:'住客信息',nam1:'住客1',nam2:'住客2'}}"></template>
+</view>
+
+<view class='tihiaio bgf'><label class='ft28 cl34'>总价：</label><label class='clr ft32'>¥168</label> <view class='tijis text_center f_right clf ft24'>提交</view> </view>

@@ -1,0 +1,56 @@
+<!--搜索-->
+<view class='shousuo ft30 zhuse' style='position: fixed;'>
+   <image src='../images/fmax.png'></image>
+   <input class='bgf' placeholder='请输入搜索内容' ></input>
+</view>
+<!-- 瀑布流 -->
+<!-- <view class='pubuliu' style='padding-top:150rpx;'>
+<block wx:for="{{article_lists}}" wx:for-item="item" wx:key="{{item.id}}">
+   <navigator url='../youji_show/youji_show?id={{item.id}}'>
+      <image src='{{item.img}}' mode='widthFix'></image>
+      <view class='mina ft26 cl3'>{{item.title}}<lable class="minb ft20 cl3 zonhe">{{item.brief}}</lable></view>
+      <view class='mina ft26 cl67 mt8'>{{item.hits}}人浏览</view>
+      <view class='sex_toux'>
+          <view class='sex_a f_left mt8'>
+             <image src='{{item.headimg}}' class='f_left'></image>
+             <view class='f_left'><view class='cl67 ft20 mt14'>{{item.username}}</view></view>
+          </view>
+          <view class='cl67 ft14 f_right mt28'>{{item.add_time}}</view>
+      </view>
+   </navigator>
+   </block>  
+   </view>  -->
+   <!-- http://lyxcx.zwon.net/upload/news/d/d643a07435.jpg -->
+   <!-- 自定义瀑布流 -->
+   <view class="liul lyousa f_left">
+   <block wx:for="{{shuzuyi}}" wx:for-item="item" wx:key="{{item.id}}">
+     <navigator class="border10 bgf" class="item-{{index}}" url='../youji_show/youji_show?id={{item.id}}'>
+       <image mode="widthFix" src="{{item.show? item.img : loadIcon}}"></image>
+       <view class="mina"><lable class="ft26 cl3">{{item.title}}</lable><label class="minb ft20 cl3 ">{{item.brief}}</label> </view>
+        <view class='mina ft26 cl67 mt8'>{{item.hits}}人浏览</view>
+        <view class='sex_toux'>
+          <view class='sex_a f_left mt8'>
+             <image  src='{{item.headimg}}' class='f_left'></image>
+             <view class='f_left'><view class='cl67 ft20 mt14'>{{item.username}}</view></view>
+          </view>
+          <view class='cl67 ft14 f_right mt28'>{{item.add_time}}</view>
+      </view>
+     </navigator>
+     </block>
+   </view>  
+   <view class="liul lyousb f_right">
+     <block wx:for="{{shuzuer}}" wx:for-item="item" wx:key="{{item.id}}">
+      <navigator class="border10 bgf" class="item-{{index}}" url='../youji_show/youji_show?id={{item.id}}'>
+       <image mode="widthFix" src="{{item.show? item.img : loadIcon}}"></image>
+       <view class="mina"><lable class="ft26 cl3">{{item.title}}</lable><label class="minb ft20 cl3 ">{{item.brief}}</label> </view>
+        <view class='mina ft26 cl67 mt8'>{{item.hits}}人浏览</view>
+        <view class='sex_toux'>
+          <view class='sex_a f_left mt8'>
+             <image  src='{{item.headimg}}' class='f_left'></image>
+             <view class='f_left'><view class='cl67 ft20 mt14'>{{item.username}}</view></view>
+          </view>
+          <view class='cl67 ft14 f_right mt28'>{{item.add_time}}</view>
+      </view>
+     </navigator>
+     </block>
+   </view>

@@ -1,0 +1,5 @@
+/* pages/zuce_dindan/zuce_dindan.wxss */
+@import "../dangjireimen_show/dangjireimen_show.wxss";
+.ersi{
+  padding: 20rpx 23rpx 210rpx;
+}

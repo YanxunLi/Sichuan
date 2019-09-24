@@ -1,0 +1,6 @@
+page{
+  height: 100%;
+}
+.jiazaizz{
+  line-height: 50rpx;
+}

@@ -1,0 +1,4 @@
+/* pages/mp_yd/mp_yd.wxss */
+.contents{
+  padding-top: 211rpx;
+}

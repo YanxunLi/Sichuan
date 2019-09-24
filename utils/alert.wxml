@@ -1,0 +1,10 @@
+<template name="alerts">
+<view class='menban' style='display:{{name}}'>
+    <view class='zhesi_shouquan bgf border10 '>
+       <image src='../images/souquan.png' class='margin'></image>
+       <view class='ft36 cl0 text_center mt20'>授权申请</view>
+       <view class='ft30 cl9 text_center mt50'>申请获取您的公开信息(昵称，头像)</view>
+       <button open-type="getUserInfo" bindgetuserinfo="getPromissions" class='souquan border10 text_center clf ft36'>授权</button>
+    </view>
+</view>
+</template>

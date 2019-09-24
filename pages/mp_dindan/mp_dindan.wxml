@@ -1,0 +1,64 @@
+<view class="">
+     <view class='yitiao bgf'>
+        <image mode='aspectFill' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565179813616&di=0569fd21c41e2c706173233b82bbfc6f&imgtype=0&src=http%3A%2F%2Fimg.yzcdn.cn%2Fupload_files%2F2018%2F11%2F08%2FFiw9hZKvKfPQc0qrGWNqOEdImcyZ.gif%2521730x0.jpg' class='yiimgs border10 f_left'></image>
+        <view class='shishi cl34'>
+            <view class='ft28'>海洋公园成人票</view>
+            <view class='mt8  ft24'>张数：1</view>
+            <view class='mt8  ft24'>总价：¥88</view>
+            <view class='mt8  ft24'>时间：2019-07-25</view>
+        </view>
+        <view class='zifutai  cl6 ft20'> 已支付</view>
+     </view>
+
+
+
+     <view class='yitiao bgf'>
+        <image mode='aspectFill' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565180502321&di=84974e2a7e2a745e679d2f13faf9768e&imgtype=0&src=http%3A%2F%2Fimg2.tuniucdn.com%2Flvyouju%2Fhaiyang9.jpg' class='yiimgs border10 f_left'></image>
+        <view class='shishi cl34'>
+            <view class='ft28'>海洋公园成人票</view>
+            <view class='mt8  ft24'>张数：1</view>
+            <view class='mt8  ft24'>总价：¥88</view>
+            <view class='mt8  ft24'>时间：2019-07-25</view>
+        </view>
+        <view class='zifutai  cl6 ft20 cll'> 待支付</view>
+     </view>
+
+
+
+     <view class='yitiao bgf'>
+        <image mode='aspectFill' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565180522503&di=e787d6f159aa347f354f42d30e15242e&imgtype=0&src=http%3A%2F%2Fphotocdn.sohu.com%2F20141224%2FImg407245948.jpg' class='yiimgs border10 f_left'></image>
+        <view class='shishi cl34'>
+            <view class='ft28'>海洋公园成人票</view>
+            <view class='mt8  ft24'>张数：1</view>
+            <view class='mt8  ft24'>总价：¥88</view>
+            <view class='mt8  ft24'>时间：2019-07-25</view>
+        </view>
+        <view class='zifutai  cl6 ft20 cll'> 待支付</view>
+     </view>
+
+
+
+     <view class='yitiao bgf'>
+        <image mode='aspectFill' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565179813616&di=0569fd21c41e2c706173233b82bbfc6f&imgtype=0&src=http%3A%2F%2Fimg.yzcdn.cn%2Fupload_files%2F2018%2F11%2F08%2FFiw9hZKvKfPQc0qrGWNqOEdImcyZ.gif%2521730x0.jpg' class='yiimgs border10 f_left'></image>
+        <view class='shishi cl34'>
+            <view class='ft28'>海洋公园成人票</view>
+            <view class='mt8  ft24'>张数：1</view>
+            <view class='mt8  ft24'>总价：¥88</view>
+            <view class='mt8  ft24'>时间：2019-07-25</view>
+        </view>
+        <view class='zifutai  cl6 ft20 '> 待支付</view>
+     </view>
+
+
+      
+     <view class='yitiao bgf'>
+        <image mode='aspectFill' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565180654138&di=7793e4b199cbdd62ec80111e85c46b0b&imgtype=0&src=http%3A%2F%2Fm.tuniucdn.com%2Ffb2%2Ft1%2FG1%2FM00%2F07%2F43%2FCii9EVbNGmaIV_E5AAxE0TQLp-4AACQ8gGZL3cADETp043_w500_h280_c1_t0.jpg' class='yiimgs border10 f_left'></image>
+        <view class='shishi cl34'>
+            <view class='ft28'>海洋公园成人票</view>
+            <view class='mt8  ft24'>张数：1</view>
+            <view class='mt8  ft24'>总价：¥88</view>
+            <view class='mt8  ft24'>时间：2019-07-25</view>
+        </view>
+        <view class='zifutai  cl6 ft20 '> 待支付</view>
+     </view>
+</view>

@@ -1,0 +1,55 @@
+<image src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=500978201,1757458190&fm=26&gp=0.jpg" mode="widthFix"  class="banntu"></image>
+<view class='autose bgf'>
+    <view class='sibai f_left'>
+       <view class='ft30 cl3'>成都海昌极地海洋公园(4A)</view>
+       <view class='ft22 cl6'>超大规模海洋动物，全新升级水上项目</view>
+    </view>
+    <navigator class='f_right genduoimg'> <image src='../images/img.jpg'></image><view class='ft22'>更多图片</view> </navigator>
+</view>
+<view class='dibsa bgf box_sing'>
+    <image src='../images/dw.png'></image>
+    <!-- 注意此处限制文字长度 -->
+    <view class='cl6 ft26 ' >四川省成都市双流区天府新区天府大道海阳路68号</view> 
+    <image src='../images/xinagyou.png'></image>
+</view>
+<view class='luansi box_sing bgf mt20'>
+   <view class='ft26 cl3'>【成人票】海洋公园票<label class='ft18 cl3 ml10'>1.0米(含)至1.4米(含)</label> <label class='ft23 clr f_right mr28'>¥198</label> </view>
+   <view class='zidon bgf mt8'>
+       <view class='yibaiw f_left'>
+         <view class='ft18 cll'>当前最早可定明日票</view>
+         <view class='ft18 cl6'>已售2000+ | 购买须知  〉</view>
+       </view>
+       <navigator class='btnsaxz f_right clf ft24 text_center'>立即预定</navigator>
+   </view>
+</view>
+<view class='luansi box_sing bgf mt3'>
+   <view class='ft26 cl3'>【成人票】海洋公园票<label class='ft18 cl3 ml10'>1.0米(含)至1.4米(含)</label> <label class='ft23 clr f_right mr28'>¥198</label> </view>
+   <view class='zidon bgf mt8'>
+       <view class='yibaiw f_left'>
+         <view class='ft18 cll'>当前最早可定明日票</view>
+         <view class='ft18 cl6'>已售2000+ | 购买须知  〉</view>
+       </view>
+       <navigator class='btnsaxz f_right clf ft24 text_center'>立即预定</navigator>
+   </view>
+</view>
+
+<view class='hlralb bgf mt20 box_sing'>
+    <view class='bfb ft30 cl3'><view class='shug'></view>开放时间</view>
+    <view class='bfb mt20 ft26 cl3' style='text-align: justify'>7月1日-8月31日   周一至周日   全天：09:00-18:30   最晚入园时间：17:30
+9月1日-10月31日   周一至周日   全天：09:00-17:30   最晚入园时间：16:30
+法定节假日营业时间：09:30-18:30
+淡季11月、12月、1月、2月(不含元旦春节)  09:30-17:00   最晚入园时间：16:00</view>
+</view>
+
+<view class='hlralb mt20 bgf'>
+      <view class='bfb ft30 cl3'><view class='shug'></view>景区简介</view>
+      <view class='youars cl3 ft26 mt16'>
+          以南北极动物展示、科普为主题的极地海洋世界于2010年7月28日破冰起航，单馆围合式的游览布局、自主驯养模式将开创国内复合式休闲极地海洋公园的新格局。
+          <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2135706573,1350395622&fm=26&gp=0.jpg' mode='widthFix'></image>
+          国家级极地科普教育基地——成都海昌极地海洋公园，与大连、青岛、天津、烟台、武汉五地极地海洋世界一脉相承，涵盖旅游、休闲、度假等多种娱乐方式，致力于营造亲近自然、幸福亲子的欢乐主题氛围。
+          <image src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=221766942,2210477418&fm=26&gp=0.jpg' mode='widthFix'></image>
+        
+          <rich-text nodes="{{images}}"></rich-text>
+          <view class='cl6 ft26 text_center mt20'>“以上信息仅供参考，具体以景区当日信息为准”</view>
+      </view>
+</view>

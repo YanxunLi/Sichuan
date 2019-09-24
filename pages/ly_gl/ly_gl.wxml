@@ -1,0 +1,25 @@
+<!--搜索-->
+<view class='shousuo ft30 zhuse' style='position: fixed;'>
+   <image src='../images/fmax.png'></image>
+   <input class='bgf' placeholder='请输入搜索内容' ></input>
+</view>
+
+<!-- 列表内容 -->
+<view class='contents'>
+<block wx:for="{{article_lists}}" wx:for-item="item" wx:key="">
+   <navigator url='../youji_show/youji_show?id={{item.id}}' class='gulinag bgf margin' >
+    <view class='hezi_l f_left'>
+        <view class='baoti ft30 cl3'>{{item.title}}</view>
+        <view class='baoti ft28 cl6 mt30'>{{item.brief}}</view>
+        <view class='biaoji f_left mt30'>
+              <block wx:for="{{item.keyword}}" wx:for-item="ios" wx:key="">
+                   <view>{{item.keyword[index]}}</view>
+               </block>
+         </view> 
+    </view>
+    <image src='{{item.img}}' mode='aspectFill'  class='hezi_r f_right'></image>
+</navigator>
+</block>
+
+
+</view>

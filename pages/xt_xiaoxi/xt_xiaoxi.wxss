@@ -1,0 +1,25 @@
+/* pages/xt_xiaoxi/xt_xiaoxi.wxss */
+.xt_xiaoxi{
+  width: 100%;
+  height: 170rpx;
+  padding: 30rpx 24rpx;
+  box-sizing: border-box;
+  margin-top: 2rpx;
+}
+.xt_xiaoxi>image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  display:block;
+}
+.zaoyus{
+  margin-left: 120rpx;
+  height: 50rpx;
+}
+.xianzhi{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp:2; 
+  -webkit-box-orient:  vertical;
+}

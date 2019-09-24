@@ -1,0 +1,33 @@
+<!--搜索-->
+<view class='shousuo ft30 zhuse' style='position: fixed;'>
+   <image src='../images/fmax.png'></image>
+   <input class='bgf' placeholder='请输入搜索内容' ></input>
+</view>
+<!-- 排序 -->
+<view class='paixun bgf'>
+   <view class='shuxian'></view>
+   <view class='xt_left f_left cl6 ft30'>全部景点<image src='../images/xj.jpg'></image> </view>
+   <view class='xt_right f_right cl6 ft30'>智能排序<image src='../images/xj.jpg'></image> </view>
+</view>
+<!-- 内容 -->
+<view class='contents'>
+    <block wx:for="{{remenjingqus}}" wx:for-item="item" wx:key="{{item.id}}">
+    <navigator url='../dangjireimen_show/dangjireimen_show?id={{item.id}}' class='gulinag bgf margin'>
+    <view class='hezi_l f_left'>
+        <view class='baoti ft30 cl3'>{{item.title}}</view>
+        <view class='baoti baoti mt4'>
+              <view class='jiage'><block wx:if="{{item.sale=='0'||item.sale=='0.00'}}">门票免费</block><block wx:else> ¥{{item.sale}}<label>起</label> </block></view> 
+        </view>
+        <view class='baoti mt12'>
+              <view class='biaoji f_left'>
+              <block wx:for="{{item.keyword}}" wx:for-item="of" wx:key="">
+                 <view>{{item.keyword[index]}}</view>
+              </block>
+              </view>
+        </view>
+         <view class='din_weizi ft26 cl6 mt21'><image src='../images/dw.png' class='f_left'></image>{{item.address}} </view>
+    </view>
+    <image src='{{item.img}}' mode='aspectFill' class='hezi_r f_right'></image>
+</navigator>
+</block>
+</view>

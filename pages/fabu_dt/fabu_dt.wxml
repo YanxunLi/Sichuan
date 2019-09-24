@@ -1,0 +1,25 @@
+<!--pages/fabu_dt/fabu_dt.wxml-->
+<!-- 上传图片 -->
+    <view class="question-images  mt20">
+      <block wx:for="{{images}}" wx:key="*this">
+        <view class="q-image-wrap">
+          <!-- 图片缩略图  -->
+          <image class="q-image" src="{{item}}" mode="aspectFill" data-idx="{{index}}" bindtap="handleImagePreview"></image>
+          <!-- 移除图片的按钮  -->
+          <view class="q-image-remover" data-idx="{{index}}" bindtap="removeImage">
+            +
+          </view>
+        </view>
+      </block>
+      <view class='uploadImgBtn' bindtap="chooseImage" wx:if="{{images.length < 3}}">
+       +
+      </view>
+    </view>
+    <!-- 输入框 -->
+<view class='shurut'>  <input type='text' placeholder='加个标题会有更多赞~' value=''></input></view>
+<!-- 文本框 -->
+<view class='shurut'> <textarea placeholder='说说此刻的心情...'></textarea></view>
+<!-- 立即发布按钮 -->
+<view class='btn_liji ft32 clf text_center'>立即发布</view>
+
+

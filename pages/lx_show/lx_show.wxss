@@ -1,0 +1,144 @@
+/* pages/lx_show/lx_show.wxss */
+@import "../dangjireimen_show/dangjireimen_show.wxss";
+.sibai {
+  width: 572rpx;
+}
+.sibai>view{
+  white-space: normal;
+  overflow:  auto;
+} 
+.tcguige{
+  padding: 20rpx 0rpx ;
+}
+.taocns{
+  width: 180rpx;
+  height: auto;
+  padding: 15rpx 0rpx;
+  box-sizing: border-box;
+  display: inline-block;
+  background: #cbcbcb;
+}
+.erhs{
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+::-webkit-scrollbar{height: 0rpx;}
+/* 日期 */
+.huayahua{
+  white-space: nowrap;
+}
+.liuerwu{
+  position: relative;
+   width: 100%;
+   padding-right: 125rpx;
+   height: auto;
+   box-sizing: border-box;
+}
+.liuerwu>scroll-view{
+    box-shadow:5rpx 0 4rpx -2rpx #ddd;
+}
+.yibers{
+  width: 120rpx;
+  height: 80rpx;
+  display: inline-block;
+  margin-left: 24rpx;
+  border-radius: 4rpx;
+  position: relative;
+  border: 1rpx solid  #cdcdcd;
+}
+.act_lan{
+  border: 1rpx solid  #4fbafe !important;
+}
+/* 三角形 */
+.daosanj{
+  position: absolute;
+  width: 0rpx;
+  height: 0rpx;
+  border-color: transparent #4fbafe;
+  border-width: 39rpx 39rpx 0 0;
+  bottom: 0rpx;
+  right: 0rpx;
+  border-style: solid;
+}
+/* 白色勾勾 */
+.gougou{
+  position: absolute;
+  width: 8rpx;
+  height: 15rpx;
+  bottom: 8rpx;
+  right: -33rpx;
+  border-top: 1rpx solid #fff;
+  border-left: 1rpx solid #fff;
+  transform: rotate(220deg);
+}
+.gendos{
+  width: 100rpx;
+  height: 80rpx;
+  right: 25rpx;
+  top: 0rpx;
+  padding-top: 14rpx;
+  padding-left: 36rpx;
+  box-sizing: border-box;
+  position: absolute;
+}
+.duoriqi{
+  width: 41rpx;
+  height: auto;
+  vertical-align: middle;
+  display: inline-block;
+}
+.gendos image{
+  width: 14rpx;
+  height: 17rpx;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 9rpx;
+}
+/* 第一天 */
+.diyiti{
+   padding: 32rpx 24rpx 20rpx;
+}
+.tuimys{
+  overflow: hidden;
+}
+.tuimys>image{
+  display: block;
+  width: 340rpx;
+  height: 195rpx;
+}
+.binjicun>image{
+  display: block;
+  width: 100%;
+}
+.pdesew{
+  padding: 20rpx 25rpx 99rpx;
+}
+/* 表格 */
+.table {
+  border-top: 1rpx solid #cdcdcd;
+  border-left: 1rpx solid #cdcdcd;
+  border-right: 1rpx solid #cdcdcd;
+  margin-bottom: 50rpx;
+}
+.tr {
+  border-bottom:  1rpx solid #cdcdcd;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height:61rpx;
+  line-height: 61rpx;
+  align-items: center;
+}
+.td {
+    width: 60%;
+    height: 100%;
+    font-size: 24rpx;
+    color: #333;
+    text-align: center;
+}
+.table>view view:nth-of-type(1){
+    border-right: 1rpx solid #cdcdcd;
+  width: 40%;
+  background: #f0f0f0;
+}

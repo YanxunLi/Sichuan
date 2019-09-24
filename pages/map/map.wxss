@@ -1,0 +1,14 @@
+/* pages/map/map.wxss */
+.board {
+    color: #c7cbe2;
+    font-weight: bold;
+}
+.header {
+    font-size: large;
+    color: #59518d;   
+}
+.opsa{
+  width: 100%;
+  height: 500rpx;
+  background: saddlebrown;
+}

@@ -1,0 +1,44 @@
+<image src="http://cheshizh.com/i/car/2012030709/201203070957064757.jpg" mode="widthFix" class="banntu"></image>
+<!-- 信息 -->
+<view class='ershi bgf border10'>
+    <view class='text_center cl3 ft30 '>{{item.name}}</view>
+    <view class='text_center ft22 cl6'>周一至周日  全天</view>
+    <view class='xian mt20'></view>
+    <view class='qishi mt10 bgf'>
+      <image src='../images/dw.png' class='mr10'></image>
+      <view class='zidsa cl6 ft26'>武侯区二环路西一段41号11栋附20号</view>
+      <view class='dh_icon f_right' bindtap='bodadianhua'>
+          <image  src='../images/dianhua.png' class='margin mt12'></image>
+      </view>
+    </view>
+</view>
+<!-- 车型列表 -->
+<view class='bgf pdyusa'>
+    <view class='cexing'>
+      <image src='../images/zcyd.png' class='mr10 '></image>
+      <view class='cl3 ft30'>车型</view>
+    </view>
+    <navigator url='../zuce_dindan/zuce_dindan' class='sansi'>
+        <image src='http://car0.autoimg.cn/upload/2014/3/4/20140304184014407-1.jpg' class='border10'></image> 
+      <view class=' jindon'>
+         <view class='cl3 ft30'>18款大众朗逸/天<label class='cl9 ft30 f_right'>已售5</label> </view>
+         <view class='clr ft32'>¥240.0</view>
+      </view> 
+    </navigator>
+       <navigator url='../zuce_dindan/zuce_dindan' class='sansi'>
+        <image src='http://car0.autoimg.cn/upload/2014/3/4/20140304184014407-1.jpg' class='border10'></image> 
+      <view class=' jindon'>
+         <view class='cl3 ft30'>18款大众朗逸/天<label class='cl9 ft30 f_right'>已售5</label> </view>
+         <view class='clr ft32'>¥240.0</view>
+      </view> 
+    </navigator>
+       <navigator url='../zuce_dindan/zuce_dindan' class='sansi'>
+        <image src='http://car0.autoimg.cn/upload/2014/3/4/20140304184014407-1.jpg' class='border10'></image> 
+      <view class=' jindon'>
+         <view class='cl3 ft30'>18款大众朗逸/天<label class='cl9 ft30 f_right'>已售5</label> </view>
+         <view class='clr ft32'>¥240.0</view>
+      </view> 
+    </navigator>
+   <view class='cll ft30 text_center lin78' style='display:{{strat}}' bindtap='zankai'>展开更多车型</view>
+</view>
+<view class='cl6 ft26 text_center lin66'>“若需了解更多，请致电商家”</view>

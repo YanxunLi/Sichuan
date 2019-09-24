@@ -1,0 +1,9 @@
+    
+<view class='scenicspot margin mt20'>
+    <block wx:for="{{shuju}}" wx:for-item="item" wx:key="item.id"> 
+       <view class='xiaobing'>
+          <image bindtap='handleImagePreview' src='{{item.img}}' data-idx="{{index}}" class='margin' mode="aspectFill"></image>
+       </view>  
+    </block>    
+    </view> 
+

@@ -1,0 +1,9 @@
+<image class="banntu" mode="widthFix" src="{{shuju.img}}"></image>
+
+<view class='pad cl3 ft30 bgf'>{{shuju.title}}</view>
+<view class='pad2 bgf'><view class=' cl3 ft30 bgf'>地址：{{shuju.address}}</view> </view>
+
+<!-- 详情内容 -->
+<view class='bgf pdshow ft26 cl3'>
+  <rich-text nodes="{{xcx_content}}"></rich-text>
+</view>

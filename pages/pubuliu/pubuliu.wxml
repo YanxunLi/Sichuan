@@ -1,0 +1,100 @@
+<!-- 引入模板标题模板 -->
+<import src="/utils/alert.wxml"/>
+<!-- 授权 -->
+<template is="alerts" data="{{name: show}}"></template>
+<!--搜索-->
+<view class='shousuo ft30 zhuse' style='position: fixed;'>
+   <image src='../images/fmax.png'></image>
+   <input class='bgf' placeholder='请输入搜索内容' ></input>
+</view>
+<!-- 切换栏 -->
+<scroll-view scroll-x="true" style='white-space:nowrap;' class='qiehualan bgf' style='margin-top:130rpx'>
+    <view class='tab_qiehuan bgf'  style='width:fit-content'>
+   <block wx:for="{{tab_lan}}" wx:for-item="item" wx:key="">
+      <label class='{{yangs[index]}}' data-bao='{{index}}' bindtap='tab_lan'>{{item.name}}</label>
+   </block>
+</view>
+</scroll-view>
+<!-- 自定义瀑布流 -->
+   <view class="liul lyousa f_left" style='padding-top:229rpx;'>
+   <block wx:for="{{shuzuyi}}" wx:for-item="item" wx:key="{{item.id}}">
+     <navigator class="border10 bgf" class="item-{{index}}" url='../lianmeng_show/lianmeng_show?id={{item.id}}'>
+       <image mode="widthFix" src="{{item.show? item.img : loadIcon}}"></image>
+       <view class='mina ft26 cl3'>{{item.title}}</view>
+      <view class='weizhi'><image src='../images/dw.png'></image><label class='cl9 ft22'>{{item.address}}</label> </view>
+     </navigator>
+     </block>
+   </view>  
+   <view class="liul lyousb f_right" style='padding-top:229rpx;'>
+     <block wx:for="{{shuzuer}}" wx:for-item="item" wx:key="{{item.id}}">
+      <navigator class="border10 bgf" class="item-{{index}}" url='../lianmeng_show/lianmeng_show?id={{item.id}}'>
+       <image mode="widthFix" src="{{item.show? item.img : loadIcon}}"></image>
+       <view class='mina ft26 cl3'>{{item.title}}</view>
+      <view class='weizhi'><image src='../images/dw.png'></image><label class='cl9 ft22'>{{item.address}}</label> </view>
+     </navigator>
+     </block>
+   </view>
+
+<!-- 瀑布流 -->
+<!-- <view class='pubuliu' style='padding-top:232rpx;padding-bottom:20rpx;'>
+   <navigator url=''>
+      <image src='http://img.mp.sohu.com/upload/20170512/d18f6158235d4495b4b250d64ad20b5e_th.png' mode='widthFix'></image>
+      <view class='mina ft26 cl3'>春熙路<lable class="minb ft20 cl3">综合商业街</lable></view>
+      <view class='weizhi'><image src='../images/dw.png'></image><label class='cl9 ft22'>成都市锦江区春熙路街道</label> </view>
+   </navigator>
+   <navigator>
+      <image src='http://image3.cnpp.cn/upload/images/20181023/11461965869_1200x800.jpg' mode='widthFix'></image>
+       <view class='mina ft26 cl3'>春熙路<lable class="minb ft20 cl3">综合商业街</lable></view>
+      <view class='weizhi'><image src='../images/dw.png'></image><label class='cl9 ft22'>成都市锦江区春熙路街道</label> </view>
+   </navigator>
+    <navigator>
+      <image src='http://s0.nuomi.bdimg.com/upload/2014/01-16/1389845045806-2832.jpg' mode='widthFix'></image>
+       <view class='mina ft26 cl3'>春熙路<lable class="minb ft20 cl3">综合商业街</lable></view>
+      <view class='weizhi'><image src='../images/dw.png'></image><label class='cl9 ft22'>成都市锦江区春熙路街道</label> </view>
+   </navigator>
+    <navigator>
+      <image src='http://photocdn.sohu.com/20151222/mp49903741_1450764173910_5.jpeg' mode='widthFix'></image>
+       <view class='mina ft26 cl3'>春熙路<lable class="minb ft20 cl3">综合商业街</lable></view>
+      <view class='weizhi'><image src='../images/dw.png'></image><label class='cl9 ft22'>成都市锦江区春熙路街道</label> </view>
+   </navigator>
+   <navigator>
+      <image src='http://img.52njl.net/Image/bj/shanghu/2017/04/d2ca17b075db48e89627a410a8c9d615.jpg' mode='widthFix'></image>
+      <view class='mina ft26 cl3'>春熙路<lable class="minb ft20 cl3">综合商业街</lable></view>
+      <view class='weizhi'><image src='../images/dw.png'></image><label class='cl9 ft22'>成都市锦江区春熙路街道</label> </view>
+   </navigator>
+   <navigator>
+      <image src='../images/mao.jpg' mode='widthFix'></image>
+       <view class='mina ft26 cl3'>春熙路<lable class="minb ft20 cl3">综合商业街</lable></view>
+      <view class='weizhi'><image src='../images/dw.png'></image><label class='cl9 ft22'>成都市锦江区春熙路街道</label> </view>
+   </navigator>
+    <navigator>
+      <image src='../images/bann1.jpg' mode='widthFix'></image>
+       <view class='mina ft26 cl3'>春熙路<lable class="minb ft20 cl3">综合商业街</lable></view>
+      <view class='weizhi'><image src='../images/dw.png'></image><label class='cl9 ft22'>成都市锦江区春熙路街道</label> </view>
+   </navigator>
+    <navigator>
+      <image src='http://www.ytszg.com/file/newsImg/image/20160229/20160229153747_0394.jpg' mode='widthFix'></image>
+       <view class='mina ft26 cl3'>春熙路<lable class="minb ft20 cl3">综合商业街</lable></view>
+      <view class='weizhi'><image src='../images/dw.png'></image><label class='cl9 ft22'>成都市锦江区春熙路街道</label> </view>
+   </navigator>
+   <navigator>
+      <image src='http://img.tukexw.com/img/dd6cb2621cf21a6b.jpg' mode='widthFix'></image>
+      <view class='mina ft26 cl3'>春熙路<lable class="minb ft20 cl3">综合商业街</lable></view>
+      <view class='weizhi'><image src='../images/dw.png'></image><label class='cl9 ft22'>成都市锦江区春熙路街道</label> </view>
+   </navigator>
+   <navigator>
+      <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1563800512102&di=0e2255e593371a16f6d7eca1882fe61e&imgtype=0&src=http%3A%2F%2Fdpic.tiankong.com%2Fph%2Flh%2FQJ6200543539.jpg' mode='widthFix'></image>
+       <view class='mina ft26 cl3'>春熙路<lable class="minb ft20 cl3">综合商业街</lable></view>
+      <view class='weizhi'><image src='../images/dw.png'></image><label class='cl9 ft22'>成都市锦江区春熙路街道</label> </view>
+   </navigator>
+    <navigator>
+      <image src='../images/bann1.jpg' mode='widthFix'></image>
+       <view class='mina ft26 cl3'>春熙路<lable class="minb ft20 cl3">综合商业街</lable></view>
+      <view class='weizhi'><image src='../images/dw.png'></image><label class='cl9 ft22'>成都市锦江区春熙路街道</label> </view>
+   </navigator>
+    <navigator>
+      <image src='../images/bann4.jpg' mode='widthFix'></image>
+       <view class='mina ft26 cl3'>春熙路<lable class="minb ft20 cl3">综合商业街</lable></view>
+      <view class='weizhi'><image src='../images/dw.png'></image><label class='cl9 ft22'>成都市锦江区春熙路街道</label> </view>
+   </navigator>
+</view> -->

@@ -1,0 +1,19 @@
+/* pages/jiudian_show/jiudian_show.wxss */
+@import "../dangjireimen_show/dangjireimen_show.wxss";
+.shows{
+  padding: 20rpx 25rpx;
+}
+.lytops{
+  margin-top: 2rpx;
+  height: auto;
+  overflow: hidden;
+}
+.mt53{
+  margin-top: 65rpx;
+}
+.huise{
+  color: #a2a2a2 !important;
+}
+.bghuise{
+   background: #a2a2a2 !important;
+}

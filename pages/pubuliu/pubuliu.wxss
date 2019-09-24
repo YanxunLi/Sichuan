@@ -1,0 +1,10 @@
+@import "../jx_yj/jx_yj.wxss";
+.weizhi{
+  margin:-10rpx  15rpx 0rpx 15rpx;
+}
+.weizhi>image{
+  width: 20rpx;
+  height: 25rpx;
+  margin-right: 6rpx;
+  display: inline-block;
+}

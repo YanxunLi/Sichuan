@@ -1,0 +1,67 @@
+@import '../tc_show/tc_show.wxss';
+.zuihou{
+  padding: 30rpx 24rpx 2rpx;
+}
+.mt41{margin-top: 41rpx;}
+.fit_zidong{display: inline-block;}
+.aixing{
+  width: 50rpx;
+  height: 66rpx;
+}
+.aixing>image{
+  display: block;
+  margin: auto;
+  width: 32rpx;
+  height: 31rpx;
+}
+.inputname{
+  width: 100%;
+  height: 70rpx;
+  padding-bottom: 30rpx;
+}
+.touximg{
+  width: 66rpx;
+  height: 66rpx;
+  border-radius: 50%;
+}
+.inputname>input{
+  display: inline-block;
+    /* width: 616rpx; */
+    width: 500rpx;
+    height: 70rpx;
+    margin-left: 20rpx;
+    padding-left: 30rpx;
+    background: #f0f0f0;
+    border-radius: 35rpx;
+}
+.wusijiu{
+  width: 549rpx;
+  height: auto;
+  margin-bottom: 20rpx;
+}
+.heighys{
+  position: relative;
+  margin-bottom: 20rpx;
+  height: auto;
+}
+.heighys>image{
+  width: 66rpx;
+  height: 66rpx;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+}
+.zkgengduo{
+  line-height: 53rpx;
+  margin-bottom: 20rpx;
+}
+.xiangguan{
+  line-height: 65rpx;
+  padding-left: 24rpx;
+}
+.bubus{
+  width: 100rpx;
+  border-radius: 10rpx;
+  line-height: 70rpx;
+  background: #4fbafe;
+}
